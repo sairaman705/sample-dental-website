@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precision Dental Care</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=DM+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="design.css">
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <a href="#" class="nav-logo">
+            <div class="nav-logo-mark">P</div>
+            <div class="nav-logo-text">Precision<br>Dental Care</div>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#expertise">About</a></li>
+            <li><a href="#expertise">Specialties</a></li>
+            <li><a href="#facility">Procedures</a></li>
+            <li><a href="#doctor">For Doctors</a></li>
+            <li><a href="#cta">Patient Care</a></li>
+            <li><a href="#footer">Contact</a></li>
+        </ul>
+        <a href="#" class="nav-cta">Refer a Patient</a>
+        <button class="nav-hamburger" id="hamburgerBtn" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <div class="mobile-menu">
+        <a href="#expertise">About</a>
+        <a href="#expertise">Specialties</a>
+        <a href="#facility">Procedures</a>
+        <a href="#doctor">For Doctors</a>
+        <a href="#cta">Patient Care</a>
+        <a href="#footer">Contact</a>
+        <a href="#" class="btn-primary">Refer a Patient</a>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" style="padding:0;">
+        <div class="hero-content">
+            <p class="hero-eyebrow">Specialist Care. Clinical Excellence.</p>
+            <h1 class="hero-title">Elevating Dental Care.<br><em>Advancing</em><br>Patient Outcomes.</h1>
+            <p class="hero-desc">A multi-specialty practice delivering advanced dental solutions through evidence-based
+                care, precision technology and a commitment to excellence.</p>
+            <div class="hero-actions">
+                <a href="#expertise" class="btn-primary">Explore Specialties</a>
+                <a href="#doctor" class="btn-text">For Referring Doctors</a>
+            </div>
+        </div>
+        <div class="hero-image" id="heroSlider">
+            <div class="hero-slide active"
+                style="background-image: url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1200&q=80&fit=crop');">
+            </div>
+            <div class="hero-slide"
+                style="background-image: url('https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=1200&q=80&fit=crop');">
+            </div>
+            <div class="hero-slide"
+                style="background-image: url('https://www.dentalandpolyclinic.com/assets/img/facilities/clinic1.webp');">
+            </div>
+            <div class="hero-slide-overlay"></div>
+            <div class="hero-counter">
+                <div class="hero-dot active" data-index="0" onclick="goToSlide(0)"></div>
+                <div class="hero-dot" data-index="1" onclick="goToSlide(1)"></div>
+                <div class="hero-dot" data-index="2" onclick="goToSlide(2)"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERTISE -->
+    <section class="expertise" id="expertise">
+        <div class="expertise-header">
+            <div>
+                <p class="section-eyebrow">Multi-Specialty. Integrated Care.</p>
+                <h2 class="section-title">Areas of Expertise</h2>
+            </div>
+            <div class="expertise-header-right">
+                <p class="expertise-desc">Comprehensive care across specialties for complex and everyday dental needs.
+                </p>
+                <a href="#" class="link-arrow">View All Specialties →</a>
+            </div>
+        </div>
+        <div class="specialties-grid">
+            <div class="specialty-card">
+                <div class="specialty-icon">
+                    <svg viewBox="0 0 32 32">
+                        <rect x="13" y="2" width="6" height="8" rx="1" />
+                        <path d="M10 10c-2 0-4 2-4 10 0 5 1 10 4 10s3-4 6-4 3 4 6 4 4-5 4-10c0-8-2-10-4-10" />
+                    </svg>
+                </div>
+                <p class="specialty-name">Implantology</p>
+                <p class="specialty-desc">Advanced implant solutions with digital precision.</p>
+            </div>
+            <div class="specialty-card">
+                <div class="specialty-icon">
+                    <svg viewBox="0 0 32 32">
+                        <path d="M8 8c0-3 3-6 8-6s8 3 8 6" />
+                        <path d="M6 14c0 8 4 14 10 14s10-6 10-14" />
+                        <path d="M12 18c1 2 2 4 4 4s3-2 4-4" />
+                    </svg>
+                </div>
+                <p class="specialty-name">Periodontology</p>
+                <p class="specialty-desc">Management of gum disease and soft tissue procedures.</p>
+            </div>
+            <div class="specialty-card">
+                <div class="specialty-icon">
+                    <svg viewBox="0 0 32 32">
+                        <path d="M10 6h12M8 12h16M10 18h12M12 24h8" />
+                        <rect x="6" y="4" width="20" height="24" rx="2" />
+                    </svg>
+                </div>
+                <p class="specialty-name">Prosthodontics</p>
+                <p class="specialty-desc">Restorative and aesthetic rehabilitation for optimal function.</p>
+            </div>
+            <div class="specialty-card">
+                <div class="specialty-icon">
+                    <svg viewBox="0 0 32 32">
+                        <circle cx="16" cy="16" r="12" />
+                        <path d="M16 8v4M16 20v4M8 16h4M20 16h4" />
+                        <circle cx="16" cy="16" r="3" />
+                    </svg>
+                </div>
+                <p class="specialty-name">Endodontics</p>
+                <p class="specialty-desc">Microscopic root canal therapy for long-term tooth preservation.</p>
+            </div>
+            <div class="specialty-card">
+                <div class="specialty-icon">
+                    <svg viewBox="0 0 32 32">
+                        <path d="M8 26l4-12 4 6 4-6 4 12" />
+                        <circle cx="16" cy="6" r="4" />
+                    </svg>
+                </div>
+                <p class="specialty-name">Orthodontics</p>
+                <p class="specialty-desc">Corrective treatments for improved alignment and bite.</p>
+            </div>
+            <div class="specialty-card">
+                <div class="specialty-icon">
+                    <svg viewBox="0 0 32 32">
+                        <path d="M12 6l-4 8h8" />
+                        <path d="M20 6l4 8h-8" />
+                        <path d="M8 18c0 5 4 8 8 8s8-3 8-8" />
+                    </svg>
+                </div>
+                <p class="specialty-name">Oral Surgery</p>
+                <p class="specialty-desc">Safe, minimally invasive surgical care under expert hands.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- DOCTOR -->
+    <section class="doctor" id="doctor" style="padding:0;">
+        <div class="doctor-image">
+            <div class="doctor-image-ph">
+                <div style="text-align:center; color:var(--navy-mid);">
+                    <img src="https://www.splendidsmilesdentalclinic.com/wp-content/uploads/2024/06/DR.JAY_-e1718013786917.jpg"
+                        alt="Dr. Arjun Malhotra"
+                        style="width:100%; height:100%; object-fit:cover; object-position:top; display:block;">
+                    <p
+                        style="font-size:11px; letter-spacing:.15em; text-transform:uppercase; opacity:.4; margin-top:12px;">
+                        Dr. Arjun Malhotra</p>
+                </div>
+            </div>
+        </div>
+        <div class="doctor-content">
+            <p class="doctor-eyebrow">Leadership. Experience. Trust.</p>
+            <h2 class="doctor-name">Dr. Arjun Malhotra</h2>
+            <p class="doctor-credentials">BDS, MDS (Prosthodontics), FICOI, FICD</p>
+            <div class="doctor-divider"></div>
+            <p class="doctor-bio">A specialist Prosthodontist and Implantologist with over 15 years of clinical
+                experience in comprehensive dental care and full-mouth rehabilitation.</p>
+            <ul class="doctor-list">
+                <li>Ex-Memberships: ICOI, ITI</li>
+                <li>Faculty: Advanced Implantology Programs</li>
+                <li>Clinical Interest: Digital Dentistry, Implant Rehabilitation, Full-Mouth Rehabilitation</li>
+            </ul>
+            <a href="#" class="btn-outline">View Full Profile →</a>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <div class="stats">
+        <div class="stat-item">
+            <div class="stat-icon">
+                <svg viewBox="0 0 28 28">
+                    <circle cx="14" cy="14" r="12" />
+                    <path d="M14 8v6l4 2" />
+                </svg>
+            </div>
+            <div class="stat-number">15+</div>
+            <div class="stat-label">Years of Clinical Experience</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-icon">
+                <svg viewBox="0 0 28 28">
+                    <path d="M14 4C10 4 7 7 7 11c0 3 2 6 4 7l1 6h4l1-6c2-1 4-4 4-7 0-4-3-7-7-7z" />
+                </svg>
+            </div>
+            <div class="stat-number">20,000+</div>
+            <div class="stat-label">Patients Treated</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-icon">
+                <svg viewBox="0 0 28 28">
+                    <rect x="10" y="2" width="8" height="6" rx="1" />
+                    <path d="M8 8c-2 2-3 4-3 8 0 6 4 10 9 10s9-4 9-10c0-4-1-6-3-8" />
+                </svg>
+            </div>
+            <div class="stat-number">5,000+</div>
+            <div class="stat-label">Implant Procedures</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-icon">
+                <svg viewBox="0 0 28 28">
+                    <rect x="4" y="4" width="20" height="20" rx="2" />
+                    <path d="M8 12h12M8 16h8" />
+                </svg>
+            </div>
+            <div class="stat-number">10+</div>
+            <div class="stat-label">Certifications & Fellowships</div>
+        </div>
+    </div>
+
+    <!-- FACILITY -->
+    <section class="facility" id="facility" style="padding:0;">
+        <div class="facility-content">
+            <p class="section-eyebrow">State-of-the-Art Facility</p>
+            <h2 class="section-title">Designed for Precision.<br>Built for Care.</h2>
+            <div class="section-divider"></div>
+            <ul class="facility-list">
+                <li>
+                    <svg viewBox="0 0 18 18">
+                        <circle cx="9" cy="9" r="7" />
+                        <path d="M6 9l2 2 4-4" />
+                    </svg>
+                    Advanced digital diagnostics and imaging
+                </li>
+                <li>
+                    <svg viewBox="0 0 18 18">
+                        <circle cx="9" cy="9" r="7" />
+                        <path d="M6 9l2 2 4-4" />
+                    </svg>
+                    Sterile, modern treatment environment
+                </li>
+                <li>
+                    <svg viewBox="0 0 18 18">
+                        <circle cx="9" cy="9" r="7" />
+                        <path d="M6 9l2 2 4-4" />
+                    </svg>
+                    International standards of sterilization
+                </li>
+                <li>
+                    <svg viewBox="0 0 18 18">
+                        <circle cx="9" cy="9" r="7" />
+                        <path d="M6 9l2 2 4-4" />
+                    </svg>
+                    Patient comfort and safety first
+                </li>
+            </ul>
+            <a href="#" class="btn-text"
+                style="color:var(--navy); font-size:13px; letter-spacing:.1em; text-transform:uppercase; font-weight:500;">Take
+                a Virtual Tour</a>
+        </div>
+        <img src="https://images.unsplash.com/photo-1629909615184-74f495363b67?w=1200&q=80&fit=crop"
+            alt="Clinic Interior" style="width:100%; height:100%; object-fit:cover; display:block; min-height:480px;">
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="education" id="education">
+        <div class="education-grid">
+            <div class="education-block">
+                <p class="section-eyebrow">Education</p>
+                <h3>Academic Foundation</h3>
+                <div class="edu-item">
+                    <p class="edu-degree">MDS – Prosthodontics</p>
+                    <p class="edu-sub">Government Dental College, Mumbai</p>
+                </div>
+                <div class="edu-divider"></div>
+                <div class="edu-item">
+                    <p class="edu-degree">BDS</p>
+                    <p class="edu-sub">Government Dental College, Mumbai</p>
+                </div>
+                <div class="edu-divider"></div>
+                <div class="edu-item">
+                    <p class="edu-degree">Continuing Education</p>
+                    <p class="edu-sub" style="line-height:1.7;">Global courses in Implantology, Digital Dentistry, and
+                        Full-Mouth Rehabilitation</p>
+                </div>
+                <a href="#" class="link-arrow" style="margin-top:24px; display:inline-flex;">View All Credentials →</a>
+            </div>
+            <div class="education-image-center">
+                <svg viewBox="0 0 80 80" fill="none" style="width:80px; opacity:.12;">
+                    <path d="M40 8L4 28l36 20 36-20L40 8z" stroke="#1a2b3c" stroke-width="1.5" />
+                    <path d="M16 36v20c0 6 11 12 24 12s24-6 24-12V36" stroke="#1a2b3c" stroke-width="1.5" />
+                    <path d="M68 28v16" stroke="#1a2b3c" stroke-width="1.5" />
+                </svg>
+            </div>
+            <div class="education-block">
+                <p class="section-eyebrow">Publications & Presentations</p>
+                <h3>Contributing to Dental Science</h3>
+                <p style="font-size:14px; color:var(--text-muted); line-height:1.8; margin-bottom:24px;">Actively
+                    involved in research and knowledge sharing through publications and national & international
+                    presentations.</p>
+                <a href="#" class="link-arrow" style="display:inline-flex;">View Publications →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <div class="cta-band" id="cta">
+        <div class="cta-band-left">
+            <div class="cta-band-icon">
+                <svg viewBox="0 0 52 52">
+                    <circle cx="18" cy="18" r="10" stroke-width="1.2" />
+                    <circle cx="34" cy="18" r="10" stroke-width="1.2" />
+                    <path d="M4 44c0-8 6-14 14-14h16c8 0 14 6 14 14" stroke-width="1.2" />
+                </svg>
+            </div>
+            <div class="cta-band-text">
+                <h3>Collaborate. Refer. Achieve Better Outcomes.</h3>
+                <p>We work closely with referring doctors to ensure the best possible care for every patient.</p>
+            </div>
+        </div>
+        <a href="#" class="btn-white">Refer a Patient →</a>
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="#" class="footer-logo">
+                    <div class="footer-logo-mark">P</div>
+                    <div class="footer-logo-text">Precision<br>Dental Care</div>
+                </a>
+                <p>Precision in practice.<br>Excellence in every smile.</p>
+                <div class="socials">
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <svg viewBox="0 0 16 16">
+                            <path
+                                d="M2 2h4v12H2zM10 6c2 0 4 1 4 4v4h-4v-4c0-1-.5-1.5-1-1.5S8 9 8 10v4H4V6h4v1.5C9 7 9.5 6 10 6z" />
+                            <circle cx="4" cy="3" r="1" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <svg viewBox="0 0 16 16">
+                            <rect x="2" y="2" width="12" height="12" rx="3" />
+                            <circle cx="8" cy="8" r="3" />
+                            <circle cx="11.5" cy="4.5" r=".5" fill="rgba(255,255,255,0.5)" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Specialties</a></li>
+                    <li><a href="#">Procedures</a></li>
+                    <li><a href="#">For Doctors</a></li>
+                    <li><a href="#">Patient Care</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>For Doctors</h4>
+                <ul>
+                    <li><a href="#">Refer a Patient</a></li>
+                    <li><a href="#">Case Collaboration</a></li>
+                    <li><a href="#">Downloads</a></li>
+                    <li><a href="#">Continuing Education</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <address>
+                    Precision Dental Care<br>
+                    123, Healthcare Avenue,<br>
+                    Mumbai – 400001, India<br><br>
+                    +91 22 1234 5678<br>
+                    info@precisiondentalcare.com
+                </address>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Precision Dental Care. All rights reserved.</p>
+            <a href="#">Privacy Policy</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
